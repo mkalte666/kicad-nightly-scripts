@@ -50,8 +50,6 @@ cd "$KNS_KICAD_BUILD_DIR"
 if [ ! -f CMakeCache.txt ]; then 
     cmake -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX="$KNS_CMAKE_INSTALL_DIR" \
         -DKICAD_USE_OCC=On \
-        -DKICAD_SCRIPTING_PYTHON3=On \
-        -DKICAD_SCRIPTING_WXPYTHON_PHOENIX=On \
         "$KNS_KICAD_SRC_DIR"
 fi
 ninja
